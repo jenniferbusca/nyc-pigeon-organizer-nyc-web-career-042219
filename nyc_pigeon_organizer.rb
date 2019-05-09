@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(pigeon_data)
         if hash.include?(value_attribute)
           hash[value_attribute][attribute].to_a << key.to_s
         else
-          binding.pry
+          # binding.pry
           hash[value_attribute] = {attribute => [key.to_s]}
         end
       end
